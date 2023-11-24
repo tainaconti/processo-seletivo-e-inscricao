@@ -1,0 +1,22 @@
+{
+  "name": "cypress-e-inscricao",
+  "version": "1.0.0",
+  "description": "Testes E2E cypress",
+  "main": "index.js",
+  "scripts": {
+    "client": "cypress run --config-file cypress-client.ts --browser chrome",
+    "dev-client": "cypress open --e2e --config-file cypress-client.ts --browser chrome"
+  },
+  "author": "Tainá Conti",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.17.4",
+    "cypress-mochawesome-reporter": "^3.5.1",
+    "faker": "^6.6.6",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "cypress-multi-reporters": "^1.6.3",
+    "cypress-qase-reporter": "^1.4.3"
+  }
+}
