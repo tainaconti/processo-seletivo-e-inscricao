@@ -1,31 +1,29 @@
-name: Cypress Cloud
+name: Cypress Cloud Integration
 
 on:
-  workflow_dispatch:
-    inputs:
-      cli:
-        description: Run by Cypress command line
-        default: yarn client
+  push:
+    branches:
+      - main 
 
 jobs:
-  cypress-e2e-electron:
+  cypress-cloud:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Get code
-        uses: actions/checkout@v3.3.0
+    - name: Checkout Repository
+      uses: actions/checkout@v2
 
-      - name: Wait for other jobs
-        run: sleep 10
+    - name: Set up Node.js and Yarn
+      uses: actions/setup-node@v3
+      with:
+        node-version: 14
+        registry-url: https://registry.yarnpkg.com/
 
-      - name: Cypress run
-        uses: cypress-io/github-action@v6.5.0
-        with:
-          install-command: yarn install
-          browser: electron 
-          record: true
-          group: UI Electron
-          spec: ${{ github.event.inputs.spec }}
-        env: 
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Install Dependencies
+      run: yarn install
+
+    - name: Run Cypress Tests
+      run: |
+        yarn client
+        npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }}
 
