@@ -18,6 +18,9 @@ jobs:
       - name: Get code
         uses: actions/checkout@v4.1.1
 
+      - name: Clear Yarn Cache
+        run: yarn cache clean
+
       - name: Install dependencies
         run: yarn install
 
@@ -25,7 +28,7 @@ jobs:
         run: ${{ github.event.inputs.cli }}
         
       - name: Install Tesults
-        run: yarn add cypress-tesults --dev
+        run: yarn add cypress-tesults --dev --registry=https://registry.npmjs.org/
 
       - name: Run E2E tests with Tesults reporter
         run: npx cypress run --config reporterOptions.token=${TESULTS_TOKEN} ${{ github.event.inputs.cli }}
