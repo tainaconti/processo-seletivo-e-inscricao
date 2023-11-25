@@ -29,9 +29,8 @@ Este plano de teste tem como objetivo garantir a qualidade e funcionalidade do p
 
 O escopo deste plano de teste é verificar e validar de forma abrangente as seguintes funcionalidades do produto:
 
-- **Checkout Process for Ticket Purchase:** Verificar se os usuários conseguem concluir com sucesso o processo de compra de ingressos, tanto como usuários logados quanto como convidados.
-- **Authentification:** Testar o processo de autenticação para garantir que os usuários possam fazer login e cadastro com credenciais válidas.
-- **Insurance Form:** Verificar se o formulário de seguro está funcionando corretamente.
+- **Processo de checkout para inscrição em evento:** Verificar se os usuários conseguem concluir com sucesso o processo de compra de ingressos, tanto como usuários logados quanto como convidados.
+- **Preenchimento do formulário de seguro:** Verificar se o formulário de seguro está funcionando corretamente.
 
 ## Tipos de Teste
 
