@@ -24,11 +24,13 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
+      - name: Install Tesults
+        run: yarn add cypress-tesults --dev
+        env:
+          TESULTS_TOKEN: ${{ secrets.TESULTS_TOKEN }}
+
       - name: Run E2E tests
         run: ${{ github.event.inputs.cli }}
-        
-      - name: Install Tesults
-        run: yarn add cypress-tesults --dev --registry=https://registry.npmjs.org/
 
       - name: Run E2E tests with Tesults reporter
         run: npx cypress run --config reporterOptions.token=${TESULTS_TOKEN} ${{ github.event.inputs.cli }}
