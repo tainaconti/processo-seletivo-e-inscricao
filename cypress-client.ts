@@ -1,8 +1,6 @@
 const { defineConfig } = require('cypress')
 const fs = require('fs')
 const path = require('path')
-const TOKEN = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE0NTk4ZTJlLTYxNGEtNGY5NC1hY2EyLTZjMzM4NjYyMzQ4OS0xNzAwODcxMTIxMjMzIiwiZXhwIjo0MTAyNDQ0ODAwMDAwLCJ2ZXIiOiIwIiwic2VzIjoiNjNiYTMxZTctNTIzMy00YmMxLTljYWYtODlmNDU4NmNiNzhhIiwidHlwZSI6InQifQ.edPyCkvnZ7NZ3tn_dV0paDHW2uEO_ix-PQvFsYxsYPU'
-
 
 module.exports = defineConfig({
     e2e: {
@@ -21,11 +19,6 @@ module.exports = defineConfig({
                     })
                 }
             })
-             on('after:run', (results) => {
-                return tesults.upload(results, {
-              project: 'eInscriaao',
-              token: 'TOKEN',
-    });
         },
     animationDistanceThreshold: 50,
     chromeWebSecurity: false,
