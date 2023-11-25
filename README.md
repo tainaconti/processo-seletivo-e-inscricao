@@ -19,10 +19,12 @@ Para executar com Cypress UI:
 npm run dev-client
 ```
 
-- [Documentação](./documentacao) do projeto no repositório 
-- Acessar aba [Github Actions](https://github.com/tainaconti/processo-seletivo-e-inscricao/actions/workflows/cypress-test.yml) para executar pipeline + reporter
-- Arquivo [cypress-test.yml](.github/workflows/cypress-test.yml)
-- [Clique aqui](https://cloud.cypress.io/projects/tovh63/runs/2/test-results?actions=%5B%5D&browsers=%5B%5D&groups=%5B%5D&isFlaky=%5B%5D&modificationDateRange=%7B%22startDate%22%3A%221970-01-01%22%2C%22endDate%22%3A%222038-01-19%22%7D&orderBy=EXECUTION_ORDER&oses=%5B%5D&specs=%5B%5D&statuses=%5B%5D&testingTypesEnum=%5B%5D) para visualizar os resultados, métricas e artifacts no Cypress Cloud ⬅️
+- [Documentação](./documentacao.pdf) do projeto no repositório
+- Integração contínua 🔁
+    - Acessar aba [Github Actions](https://github.com/tainaconti/processo-seletivo-e-inscricao/actions/workflows/cypress-test.yml) para executar as pipelines existentes
+    - [Clique aqui](https://cloud.cypress.io/projects/tovh63/runs/2/test-results?actions=%5B%5D&browsers=%5B%5D&groups=%5B%5D&isFlaky=%5B%5D&modificationDateRange=%7B%22startDate%22%3A%221970-01-01%22%2C%22endDate%22%3A%222038-01-19%22%7D&orderBy=EXECUTION_ORDER&oses=%5B%5D&specs=%5B%5D&statuses=%5B%5D&testingTypesEnum=%5B%5D) para visualizar os resultados, métricas e artifacts no Cypress Cloud ⬅️
+ 
+![CatTypingGIF](https://github.com/tainaconti/processo-seletivo-e-inscricao/assets/87378037/782a0411-3ed0-40d5-954b-3df191a079c8)
 
 # **Plano de Teste**
 
