@@ -19,7 +19,9 @@ Para executar com Cypress UI:
 npm run dev-client
 ```
 
-- [Documentação](./doc-pdf.pdf) do projeto no repositório 
+- [Documentação](./documentacao) do projeto no repositório 
+- Acessar aba [Github Actions](https://github.com/tainaconti/processo-seletivo-e-inscricao/actions/workflows/cypress-test.yml) para executar pipeline + reporter
+- Arquivo [cypress-test.yml](.github/workflows/cypress-test.yml)
 
 # **Plano de Teste**
 
@@ -66,65 +68,57 @@ O escopo deste plano de teste é verificar e validar de forma abrangente as segu
         - Usuário consiga se inscrever com sucesso e visualize todas as informações referentes ao pedido
     - ****Passos para execução****
         
-        Dado que o usuário está na página de checkout
-        Quando seleciona uma quantidade de ingressos maior que zero
-        E clica no botão "Continuar"
-        E realiza o login com credenciais válidas
-        E seleciona participante existente
-        E clica no botão "Finalizar"
-        Então é redirecionado para a página de checkout concluído
-        E visualiza a mensagem de pedido feito com sucesso
-        E visualiza o QR code e o código de inscrição
-        E tem a opção de salvar o comprovante
-        E tem a opção de visualizar suas inscrições
-        E consegue avaliar sua experiência
+        Dado que o usuário está na página de checkout  
+        Quando seleciona uma quantidade de ingressos maior que zero  
+        E clica no botão "Continuar"  
+        E realiza o login com credenciais válidas  
+        E seleciona participante existente  
+        E clica no botão "Finalizar"  
+        Então é redirecionado para a página de checkout concluído  
+        E visualiza a mensagem de pedido feito com sucesso  
+        E visualiza o QR code e o código de inscrição  
+        E tem a opção de salvar o comprovante  
+        E tem a opção de visualizar suas inscrições  
+        E consegue avaliar sua experiência  
         
 - **Cenário 02: Usuário guest realiza o checkout com sucesso**
     
-    <aside>
     💡 Como usuário visitante, eu quero realizar inscrição na plataforma para que eu possa participar do evento
-    
-    </aside>
-    
+      
     - Resultado esperado:
         - Usuário consiga se inscrever com sucesso e visualize todas as informações referentes ao pedido
         - Usuário deve acessar URL: [https://checkout.einscricao.app/tickets](https://checkout.einscricao.app/tickets)
         
     - ****Passos para execução****
         
-        Dado que o usuário está na página de checkout
-        Quando seleciona uma quantidade de ingressos maior que zero
-        E clica no botão "Continuar sem conta"
-        E preenche os dados válidos do participante
-        E clica no botão "Finalizar"
-        Então é redirecionado para a página de checkout concluído
-        E visualiza a mensagem de pedido feito com sucesso
-        E visualiza o QR code e o código de inscrição
-        E tem a opção de salvar o comprovante
-        E tem a opção de visualizar suas inscrições
-        E consegue avaliar sua experiência
-        
+        Dado que o usuário está na página de checkout  
+        Quando seleciona uma quantidade de ingressos maior que zero  
+        E clica no botão "Continuar sem conta"  
+        E preenche os dados válidos do participante  
+        E clica no botão "Finalizar"  
+        Então é redirecionado para a página de checkout concluído  
+        E visualiza a mensagem de pedido feito com sucesso  
+        E visualiza o QR code e o código de inscrição  
+        E tem a opção de salvar o comprovante  
+        E tem a opção de visualizar suas inscrições  
+        E consegue avaliar sua experiência    
     
-
 ✨ **Funcionalidade: Preenchimento do formulário de seguro**
 
 - **Cenário 01: Preenchimento completo do formulário de seguro com dados válidos**
     
-    <aside>
     💡 Como usuário, eu quero preencher o formulário de seguro para contratar serviços relacionados
-    
-    </aside>
-    
+        
     - Resultado esperado:
         - Usuário consegue preencher **todas as informações obrigatórias** do formulário e visualize mensagem de sucesso ao final
         - Usuário deve acessar URL: [https://checkout.einscricao.app/tickets](https://sampleapp.tricentis.com/101/app.php)
     - ****Passos para execução****
         
-        **Dado** que o usuário está na aba inicial do formulário de seguros
+        **Dado** que o usuário está na aba inicial do formulário de seguros  
         
-        **Quando** todas as abas existentes forem preenchidas com as informações obrigatórias e dados válidos
+        **Quando** todas as abas existentes forem preenchidas com as informações obrigatórias e dados válidos  
         
-        **Então** a mensagem de sucesso "Sending e-mail success!" deve ser visualizada.
+        **Então** a mensagem de sucesso "Sending e-mail success!" deve ser visualizada.  
         
 
 ## Ambientes e Ferramentas
@@ -133,13 +127,15 @@ Os testes serão feitos do ambiente de homologação, e contém as mesmas
 configurações do ambiente de produção, utilizando o ambiente:
 
 - Sistema operacional: Windows 10
-- Navegadore: Chrome
+- Navegador: Chrome
 - Dispositivo: Desktop
 
 Ferramentas utilizadas: 
 
 - Cypress
 - Github
+- Github Actions
+- Tesults
 
 ## Entregáveis
 
