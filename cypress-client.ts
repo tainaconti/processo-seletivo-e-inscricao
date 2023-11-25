@@ -1,9 +1,9 @@
-const { defineConfig } = require('cypress')
-const fs = require('fs')
-const path = require('path')
+import { defineConfig } from 'cypress';
+import fs from 'fs';
+import path from 'path'; 
 
 module.exports = defineConfig({
-    projectId: "tovh63",
+    projectId: 'tovh63',
     e2e: {
         setupNodeEvents(on, config) {
             on('task', {
