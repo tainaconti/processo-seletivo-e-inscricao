@@ -4,8 +4,8 @@
 > *Tainá Wandermurem Conti*
 > 
 
-Executando os testes localmente 
-Inicie clonando o repositório e instalando as dependencias
+# **Executando os testes localmente** 
+- Inicie clonando o repositório e instalando as dependencias
 ```
 npm install
 ```
