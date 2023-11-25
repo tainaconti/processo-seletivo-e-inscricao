@@ -13,7 +13,7 @@ Para executar no modo headless:
 ```
 npm run client
 ```
-Para executar com cypress open:
+Para executar com Cypress UI:
 ```
 npm run dev-client
 ```
