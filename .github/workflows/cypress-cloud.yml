@@ -1,17 +1,21 @@
 name: Cypress Cloud
 
 on:
-  workflow_dispatch: 
-    inputs: 
+  workflow_dispatch:
+    inputs:
       cli:
-        description: Run by cypress command line
+        description: Run by Cypress command line
         default: yarn client
+
 jobs:
   cypress-e2e-electron:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
         uses: actions/checkout@v3.3.0
+
+      - name: Wait for other jobs
+        run: sleep 10
 
       - name: Cypress run
         uses: cypress-io/github-action@v5.0.8
@@ -24,3 +28,4 @@ jobs:
         env: 
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
