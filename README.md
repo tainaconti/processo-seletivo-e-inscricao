@@ -135,7 +135,6 @@ Ferramentas utilizadas:
 - Cypress
 - Github
 - Github Actions
-- Tesults
 
 ## Entregáveis
 
