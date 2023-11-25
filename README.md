@@ -1,7 +1,8 @@
 
 # Processo seletivo - e-Inscrição
 
-> *Tainá Wandermurem Conti*
+> Autora: *Tainá Wandermurem Conti*
+> [Linkedln](https://www.linkedin.com/in/tainaconti/)
 > 
 
 # **Executando os testes localmente** 
@@ -19,8 +20,6 @@ npm run dev-client
 ```
 
 - [Documentação](./doc-pdf.pdf) do projeto no repositório 
-- Link do [Notion.io](https://www.notion.so/Processo-seletivo-e-Inscri-o-be2114656f37455eb7a2bbeb1a07686a?pvs=4)
-
 
 # **Plano de Teste**
 
